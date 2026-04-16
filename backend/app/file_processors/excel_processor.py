@@ -52,13 +52,16 @@ class ExcelProcessor(BaseFileProcessor):
         Returns:
             Dict with structure analysis including headers, data ranges, etc.
         """
+        # Convert merged cells to string representation for JSON serialization
+        merged_cells_list = [str(mc) for mc in worksheet.merged_cells.ranges]
+
         structure = {
             'name': worksheet.title,
             'max_row': worksheet.max_row,
             'max_column': worksheet.max_column,
             'headers': [],
             'data_ranges': [],
-            'merged_cells': list(worksheet.merged_cells.ranges),
+            'merged_cells': merged_cells_list,
             'has_formulas': False,
             'cell_types': {}
         }
