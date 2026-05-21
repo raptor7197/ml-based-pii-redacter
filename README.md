@@ -3,7 +3,7 @@
 Smart Redact is a simple PII redaction app for documents and resumes.
 
 ## What it does
-- Detects common PII like names, emails, phone numbers, and document text
+- Detects common PII like names, emails, and phone numbers
 - Redacts sensitive content
 - Supports PDF input files
 
