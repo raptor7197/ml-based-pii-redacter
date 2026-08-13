@@ -1,2 +1,44 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
 
+# node
 node_modules/
+dist/
+
+# env files
+.env
+.env.local
+.env.*.local
+
+# ide and os
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# logs and temp
+*.log
+*.tmp
+*.temp
+
+# data files (uploaded and processed at runtime)
+data/input_files/*
+data/processed_files/*
+backend/data/input_files/*
+backend/data/processed_files/*
+!data/input_files/.gitkeep
+!data/processed_files/.gitkeep
+!backend/data/input_files/.gitkeep
+!backend/data/processed_files/.gitkeep
+
+# testing
+.pytest_cache/
+.coverage
+htmlcov/
